@@ -1,0 +1,119 @@
+#expert{
+    padding: 80px 0 100px 0;
+    background: linear-gradient( to bottom, #30344E 0%, #30344E 70%, #fff 70%, #fff 100% );
+}
+.expert__heading_small{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--red);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.expert__heading_big{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.expert__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.expert__wrapper_item{
+    width: 330px;
+    height: 375px;
+    background-color: #52C5B6;
+    border-radius: 5px;
+    position: relative;
+    transition: all linear 0.2s;
+}
+.expert__wrapper_item_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert_item_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    padding: 25px 27px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+    gap: 16px;
+}
+.overlay_icon{
+    width: 44px;
+    height: 44px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_icon:hover{
+    background-color: #52C5B6;
+    transition: all linear 0.2s;
+    color: var(--white);
+}
+
+.expert__wrapper_item:hover .expert_item_overlay{
+    opacity: 1;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+.expert__item_name{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 233px;
+    height: 95px;
+    background-color: var(--white);
+    padding: 22px 46px 22px 60px;
+}
+
+.expert__wrapper_item:hover .expert__item_name{
+    background-color: var(--blue);
+    color: var(--white);
+    transition: all linear 0.2s;
+}
+
+.expert__item_name_heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+}
+.expert__item_name_pera{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--gray);
+    font-family: 'Inter', sans-serif;
+}
+
+.expert__wrapper_item:hover .expert__item_name_heading{
+    color: var(--white); 
+    transition: all linear 0.2s;
+}
+.expert__wrapper_item:hover .expert__item_name_pera{
+    color: var(--white); 
+    transition: all linear 0.2s;
+}
